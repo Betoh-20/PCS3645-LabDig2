@@ -19,14 +19,14 @@
 #
 # Quartus Prime
 # Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-# Date created = 10:13:46  September 02, 2025
+# Date created = 11:54:40  September 02, 2025
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		Exp1_T5BB6_assignment_defaults.qdf
+#		controle_servo_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -39,14 +39,25 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CEBA4F23C7
-set_global_assignment -name TOP_LEVEL_ENTITY Exp1_T5BB6
+set_global_assignment -name TOP_LEVEL_ENTITY controle_servo
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:13:46  SEPTEMBER 02, 2025"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:54:40  SEPTEMBER 02, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
-set_global_assignment -name VERILOG_FILE circuito_pwm.v
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_M9 -to clock
+set_location_assignment PIN_B16 -to controle
+set_location_assignment PIN_C16 -to db_controle
+set_location_assignment PIN_T13 -to posicao[1]
+set_location_assignment PIN_V13 -to posicao[0]
+set_location_assignment PIN_U13 -to reset
+set_global_assignment -name VERILOG_FILE controle_servo.v
+set_global_assignment -name VERILOG_FILE circuito_pwm.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
