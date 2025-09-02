@@ -1,0 +1,50 @@
+# Compile of circuito_pwm.v was successful.
+# Compile of circuito_pwm_tb.v was successful.
+# Compile of controle_servo.v failed with 1 errors.
+# Compile of controle_servo_tb.v was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of controle_servo.v failed with 1 errors.
+# Compile of circuito_pwm.v was successful.
+# Compile of circuito_pwm_tb.v was successful.
+# Compile of controle_servo.v was successful.
+# Compile of controle_servo_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.controle_servo_tb
+# vsim -gui work.controle_servo_tb 
+# Start time: 11:39:23 on Sep 02,2025
+# Loading work.controle_servo_tb
+# Loading work.controle_servo
+# Loading work.circuito_pwm
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/controle_servo_tb/clockPeriod \
+sim:/controle_servo_tb/clock_in \
+sim:/controle_servo_tb/reset_in \
+sim:/controle_servo_tb/posicao_in \
+sim:/controle_servo_tb/sinal_controle_out \
+sim:/controle_servo_tb/caso
+run -all
+# Inicio da simulacao
+# ... Simulacao ate 800ms (800_000_000ns). Aguarde o final da simulacao...
+reset
+# reset: terminal attributes: No such device or address
+# 
+reset -all
+# reset: terminal attributes: No such device or address
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# Inicio da simulacao
+# ... Simulacao ate 800ms (800_000_000ns). Aguarde o final da simulacao...
+# Fim da simulacao
+# ** Note: $stop    : C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/controle_servo_tb.v(78)
+#    Time: 800000330 ns  Iteration: 0  Instance: /controle_servo_tb
+# Break in Module controle_servo_tb at C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/controle_servo_tb.v line 78
+add wave -position insertpoint \
+sim:/controle_servo_tb/caso 
+# End time: 11:49:08 on Sep 02,2025, Elapsed time: 0:09:45
+# Errors: 0, Warnings: 1

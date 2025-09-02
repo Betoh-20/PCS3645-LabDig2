@@ -1,0 +1,29 @@
+C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/controle_servo_tb.v {1 {vlog -work work -stats=none C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/controle_servo_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controle_servo_tb
+
+Top level modules:
+	controle_servo_tb
+
+} {} {}} C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/circuito_pwm.v {1 {vlog -work work -stats=none C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/circuito_pwm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module circuito_pwm
+
+Top level modules:
+	circuito_pwm
+
+} {} {}} C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/circuito_pwm_tb.v {1 {vlog -work work -stats=none C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/circuito_pwm_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module circuito_pwm_tb
+
+Top level modules:
+	circuito_pwm_tb
+
+} {} {}} C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/controle_servo.v {1 {vlog -work work -stats=none C:/Users/betoj/Poli/PCS3645-LabDig2/experiencias/exp1/Verilog/controle_servo.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controle_servo
+
+Top level modules:
+	controle_servo
+
+} {} {}}
