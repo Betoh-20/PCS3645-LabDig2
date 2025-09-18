@@ -1,0 +1,33 @@
+Quartus Prime Archive log --	C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Quartus/exp3_t2bB6.qarlog
+
+Archive:	C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Quartus/exp3_t2bB6.qar
+Date:		Sun Sep 14 21:02:40 2025
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Quartus/exp3_sensor.qsf
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Quartus/exp3_sensor_completo.qsf
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Quartus/exp3_t2bB6.qpf
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos_tb.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_tb.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m_tb.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/edge_detector.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso_tb.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/hexa7seg.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_tb.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc.v
+C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/registrador_n.v
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 22 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

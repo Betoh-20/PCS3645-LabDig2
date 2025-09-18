@@ -1,0 +1,603 @@
+Analysis & Synthesis report for exp3_sensor
+Sun Sep 14 15:59:00 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |exp3_sensor|interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado
+  9. State Machine - |exp3_sensor|interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_uc:U1
+ 14. Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1
+ 15. Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2
+ 16. Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD
+ 17. Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1
+ 18. Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC
+ 19. Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|registrador_n:U3
+ 20. Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2|registrador_n:U3"
+ 21. Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1"
+ 22. Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2"
+ 23. Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1"
+ 24. Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Sep 14 15:59:00 2025       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; exp3_sensor                                 ;
+; Top-level Entity Name           ; exp3_sensor                                 ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 37                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; exp3_sensor        ; exp3_sensor        ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
++------------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                               ; Library ;
++------------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; ../Verilog/registrador_n.v               ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/registrador_n.v               ;         ;
+; ../Verilog/interface_hcsr04_uc-PARCIAL.v ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc-PARCIAL.v ;         ;
+; ../Verilog/interface_hcsr04_fd-PARCIAL.v ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v ;         ;
+; ../Verilog/interface_hcsr04.v            ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v            ;         ;
+; ../Verilog/hexa7seg.v                    ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/hexa7seg.v                    ;         ;
+; ../Verilog/gerador_pulso.v               ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso.v               ;         ;
+; ../Verilog/exp3_sensor.v                 ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v                 ;         ;
+; ../Verilog/edge_detector.v               ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/edge_detector.v               ;         ;
+; ../Verilog/contador_m.v                  ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m.v                  ;         ;
+; ../Verilog/contador_cm_uc-PARCIAL.v      ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v      ;         ;
+; ../Verilog/contador_cm_fd.v              ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v              ;         ;
+; ../Verilog/contador_cm.v                 ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v                 ;         ;
+; ../Verilog/contador_bcd_3digitos.v       ; yes             ; User Verilog HDL File  ; C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos.v       ;         ;
++------------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 0              ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 0              ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 0              ;
+;     -- 5 input functions                    ; 0              ;
+;     -- 4 input functions                    ; 0              ;
+;     -- <=3 input functions                  ; 0              ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 37             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; trigger~output ;
+; Maximum fan-out                             ; 1              ;
+; Total fan-out                               ; 39             ;
+; Average fan-out                             ; 0.53           ;
++---------------------------------------------+----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |exp3_sensor               ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 37   ; 0            ; |exp3_sensor        ; exp3_sensor ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------+
+; State Machine - |exp3_sensor|interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado ;
++------------------------+-------------------+------------------------+--------------------------------+
+; Name                   ; reg_estado.parado ; reg_estado.final_pulso ; reg_estado.contagem            ;
++------------------------+-------------------+------------------------+--------------------------------+
+; reg_estado.parado      ; 0                 ; 0                      ; 0                              ;
+; reg_estado.contagem    ; 1                 ; 0                      ; 1                              ;
+; reg_estado.final_pulso ; 1                 ; 1                      ; 0                              ;
++------------------------+-------------------+------------------------+--------------------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |exp3_sensor|interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual                                                                                    ;
++----------------------+---------------------+----------------------+---------------+--------------------+----------------------+-------------------+----------------+
+; Name                 ; Eatual.final_medida ; Eatual.armazenamento ; Eatual.medida ; Eatual.espera_echo ; Eatual.envia_trigger ; Eatual.preparacao ; Eatual.inicial ;
++----------------------+---------------------+----------------------+---------------+--------------------+----------------------+-------------------+----------------+
+; Eatual.inicial       ; 0                   ; 0                    ; 0             ; 0                  ; 0                    ; 0                 ; 0              ;
+; Eatual.preparacao    ; 0                   ; 0                    ; 0             ; 0                  ; 0                    ; 1                 ; 1              ;
+; Eatual.envia_trigger ; 0                   ; 0                    ; 0             ; 0                  ; 1                    ; 0                 ; 1              ;
+; Eatual.espera_echo   ; 0                   ; 0                    ; 0             ; 1                  ; 0                    ; 0                 ; 1              ;
+; Eatual.medida        ; 0                   ; 0                    ; 1             ; 0                  ; 0                    ; 0                 ; 1              ;
+; Eatual.armazenamento ; 0                   ; 1                    ; 0             ; 0                  ; 0                    ; 0                 ; 1              ;
+; Eatual.final_medida  ; 1                   ; 0                    ; 0             ; 0                  ; 0                    ; 0                 ; 1              ;
++----------------------+---------------------+----------------------+---------------+--------------------+----------------------+-------------------+----------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                       ;
++-------------------------------------------------------------------------------------+--------------------+
+; Register name                                                                       ; Reason for Removal ;
++-------------------------------------------------------------------------------------+--------------------+
+; interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado.parado      ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual.preparacao                       ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual.inicial                          ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual.envia_trigger                    ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual.espera_echo                      ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual.medida                           ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual.armazenamento                    ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual.final_medida                     ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual~4                                ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual~5                                ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_uc:U1|Eatual~6                                ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_cont[0..31]        ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado.contagem    ; Lost fanout        ;
+; interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado.final_pulso ; Lost fanout        ;
+; Total Number of Removed Registers = 45                                              ;                    ;
++-------------------------------------------------------------------------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                               ;
++--------------------------------------------------------------------------------+--------------------+-------------------------------------------------------------------------------------+
+; Register name                                                                  ; Reason for Removal ; Registers Removed due to This Register                                              ;
++--------------------------------------------------------------------------------+--------------------+-------------------------------------------------------------------------------------+
+; interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado.parado ; Lost Fanouts       ; interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado.contagem    ;
+; interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_cont[31]      ; Lost Fanouts       ; interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1|reg_estado.final_pulso ;
++--------------------------------------------------------------------------------+--------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_uc:U1 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; inicial        ; 000   ; Unsigned Binary                                                 ;
+; preparacao     ; 001   ; Unsigned Binary                                                 ;
+; envia_trigger  ; 010   ; Unsigned Binary                                                 ;
+; espera_echo    ; 011   ; Unsigned Binary                                                 ;
+; medida         ; 100   ; Unsigned Binary                                                 ;
+; armazenamento  ; 101   ; Unsigned Binary                                                 ;
+; final_medida   ; 110   ; Unsigned Binary                                                 ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; largura        ; 25    ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2 ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; R              ; 2941  ; Signed Integer                                                                 ;
+; N              ; 12    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; R              ; 2941  ; Signed Integer                                                                                   ;
+; N              ; 12    ; Signed Integer                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+; M              ; 2941  ; Signed Integer                                                                                                 ;
+; N              ; 12    ; Signed Integer                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; inicial        ; 000   ; Unsigned Binary                                                                                  ;
+; Y              ; 001   ; Unsigned Binary                                                                                  ;
+; Z              ; 010   ; Unsigned Binary                                                                                  ;
+; W              ; 011   ; Unsigned Binary                                                                                  ;
+; F              ; 100   ; Unsigned Binary                                                                                  ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: interface_hcsr04:INT|interface_hcsr04_fd:U2|registrador_n:U3 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; N              ; 12    ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2|registrador_n:U3" ;
++--------+--------+----------+-------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                     ;
++--------+--------+----------+-------------------------------------------------------------+
+; clear  ; Input  ; Info     ; Explicitly unconnected                                      ;
+; enable ; Input  ; Info     ; Explicitly unconnected                                      ;
+; Q      ; Output ; Info     ; Explicitly unconnected                                      ;
++--------+--------+----------+-------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1" ;
++---------+--------+----------+------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                  ;
++---------+--------+----------+------------------------------------------------------------------------------------------+
+; zera_as ; Input  ; Info     ; Stuck at GND                                                                             ;
+; Q       ; Output ; Info     ; Explicitly unconnected                                                                   ;
+; fim     ; Output ; Info     ; Explicitly unconnected                                                                   ;
++---------+--------+----------+------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2" ;
++--------+--------+----------+-----------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                   ;
++--------+--------+----------+-----------------------------------------------------------+
+; reset  ; Input  ; Info     ; Explicitly unconnected                                    ;
+; pulso  ; Input  ; Info     ; Explicitly unconnected                                    ;
+; fim    ; Output ; Info     ; Explicitly unconnected                                    ;
+; pronto ; Output ; Info     ; Explicitly unconnected                                    ;
++--------+--------+----------+-----------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1" ;
++--------+--------+----------+-------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                     ;
++--------+--------+----------+-------------------------------------------------------------+
+; reset  ; Input  ; Info     ; Explicitly unconnected                                      ;
+; gera   ; Input  ; Info     ; Explicitly unconnected                                      ;
+; para   ; Input  ; Info     ; Explicitly unconnected                                      ;
+; pulso  ; Output ; Info     ; Explicitly unconnected                                      ;
+; pronto ; Output ; Info     ; Explicitly unconnected                                      ;
++--------+--------+----------+-------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "interface_hcsr04:INT|interface_hcsr04_fd:U2" ;
++------+--------+----------+----------------------------------------------+
+; Port ; Type   ; Severity ; Details                                      ;
++------+--------+----------+----------------------------------------------+
+; fim  ; Output ; Info     ; Explicitly unconnected                       ;
++------+--------+----------+----------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 2                           ;
+;     normal            ; 2                           ;
+;         0 data inputs ; 2                           ;
+; boundary_port         ; 37                          ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sun Sep 14 15:58:50 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off exp3_t2bB6 -c exp3_sensor
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/registrador_n.v
+    Info (12023): Found entity 1: registrador_n File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/registrador_n.v Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/interface_hcsr04_uc-parcial.v
+    Info (12023): Found entity 1: interface_hcsr04_uc File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc-PARCIAL.v Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/interface_hcsr04_tb.v
+    Info (12023): Found entity 1: interface_hcsr04_tb File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_tb.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/interface_hcsr04_fd-parcial.v
+    Info (12023): Found entity 1: interface_hcsr04_fd File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/interface_hcsr04.v
+    Info (12023): Found entity 1: interface_hcsr04 File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/hexa7seg.v
+    Info (12023): Found entity 1: hexa7seg File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/hexa7seg.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/gerador_pulso_tb.v
+    Info (12023): Found entity 1: gerador_pulso_tb File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso_tb.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/gerador_pulso.v
+    Info (12023): Found entity 1: gerador_pulso File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso.v Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/exp3_sensor.v
+    Info (12023): Found entity 1: exp3_sensor File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/edge_detector.v
+    Info (12023): Found entity 1: edge_detector File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/edge_detector.v Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/contador_m_tb.v
+    Info (12023): Found entity 1: contador_m_tb File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m_tb.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/contador_m.v
+    Info (12023): Found entity 1: contador_m File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/contador_cm_uc-parcial.v
+    Info (12023): Found entity 1: contador_cm_uc File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/contador_cm_tb.v
+    Info (12023): Found entity 1: contador_cm_tb File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_tb.v Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/contador_cm_fd.v
+    Info (12023): Found entity 1: contador_cm_fd File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/contador_cm.v
+    Info (12023): Found entity 1: contador_cm File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/contador_bcd_3digitos_tb.v
+    Info (12023): Found entity 1: contador_bcd_3digitos_tb File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos_tb.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file /users/betoj/poli/6-2-quadriaula/pcs3645-labdig2/experiencias/exp3/verilog/contador_bcd_3digitos.v
+    Info (12023): Found entity 1: contador_bcd_3digitos File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos.v Line: 14
+Info (12127): Elaborating entity "exp3_sensor" for the top level hierarchy
+Info (12128): Elaborating entity "interface_hcsr04" for hierarchy "interface_hcsr04:INT" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 49
+Info (12128): Elaborating entity "interface_hcsr04_uc" for hierarchy "interface_hcsr04:INT|interface_hcsr04_uc:U1" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v Line: 43
+Warning (10034): Output port "gera" at interface_hcsr04_uc-PARCIAL.v(21) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc-PARCIAL.v Line: 21
+Warning (10034): Output port "registra" at interface_hcsr04_uc-PARCIAL.v(22) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc-PARCIAL.v Line: 22
+Warning (10034): Output port "pronto" at interface_hcsr04_uc-PARCIAL.v(23) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc-PARCIAL.v Line: 23
+Info (12128): Elaborating entity "interface_hcsr04_fd" for hierarchy "interface_hcsr04:INT|interface_hcsr04_fd:U2" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v Line: 56
+Warning (10034): Output port "distancia" at interface_hcsr04_fd-PARCIAL.v(24) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v Line: 24
+Warning (10034): Output port "fim_medida" at interface_hcsr04_fd-PARCIAL.v(20) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v Line: 20
+Warning (10034): Output port "trigger" at interface_hcsr04_fd-PARCIAL.v(21) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v Line: 21
+Warning (10034): Output port "fim" at interface_hcsr04_fd-PARCIAL.v(22) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v Line: 22
+Info (12128): Elaborating entity "gerador_pulso" for hierarchy "interface_hcsr04:INT|interface_hcsr04_fd:U2|gerador_pulso:U1" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v Line: 39
+Info (12128): Elaborating entity "contador_cm" for hierarchy "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v Line: 54
+Info (12128): Elaborating entity "contador_cm_fd" for hierarchy "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v Line: 52
+Info (12128): Elaborating entity "contador_m" for hierarchy "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_m:U1" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v Line: 44
+Info (12128): Elaborating entity "contador_bcd_3digitos" for hierarchy "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_fd:FD|contador_bcd_3digitos:U2" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v Line: 55
+Info (12128): Elaborating entity "contador_cm_uc" for hierarchy "interface_hcsr04:INT|interface_hcsr04_fd:U2|contador_cm:U2|contador_cm_uc:UC" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v Line: 65
+Warning (10036): Verilog HDL or VHDL warning at contador_cm_uc-PARCIAL.v(29): object "Eatual" assigned a value but never read File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v Line: 29
+Warning (10858): Verilog HDL warning at contador_cm_uc-PARCIAL.v(29): object Eprox used but never assigned File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v Line: 29
+Warning (10034): Output port "zera_tick" at contador_cm_uc-PARCIAL.v(21) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v Line: 21
+Warning (10034): Output port "conta_tick" at contador_cm_uc-PARCIAL.v(22) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v Line: 22
+Warning (10034): Output port "zera_bcd" at contador_cm_uc-PARCIAL.v(23) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v Line: 23
+Warning (10034): Output port "conta_bcd" at contador_cm_uc-PARCIAL.v(24) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v Line: 24
+Warning (10034): Output port "pronto" at contador_cm_uc-PARCIAL.v(26) has no driver File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc-PARCIAL.v Line: 26
+Warning (12158): Entity "contador_cm_uc" contains only dangling pins File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v Line: 65
+Info (12128): Elaborating entity "registrador_n" for hierarchy "interface_hcsr04:INT|interface_hcsr04_fd:U2|registrador_n:U3" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd-PARCIAL.v Line: 65
+Info (12128): Elaborating entity "hexa7seg" for hierarchy "hexa7seg:H0" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 55
+Info (12128): Elaborating entity "edge_detector" for hierarchy "edge_detector:DB" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 71
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "trigger" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 22
+    Warning (13410): Pin "hex0[0]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 23
+    Warning (13410): Pin "hex0[1]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 23
+    Warning (13410): Pin "hex0[2]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 23
+    Warning (13410): Pin "hex0[3]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 23
+    Warning (13410): Pin "hex0[4]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 23
+    Warning (13410): Pin "hex0[5]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 23
+    Warning (13410): Pin "hex0[6]" is stuck at VCC File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 23
+    Warning (13410): Pin "hex1[0]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 24
+    Warning (13410): Pin "hex1[1]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 24
+    Warning (13410): Pin "hex1[2]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 24
+    Warning (13410): Pin "hex1[3]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 24
+    Warning (13410): Pin "hex1[4]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 24
+    Warning (13410): Pin "hex1[5]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 24
+    Warning (13410): Pin "hex1[6]" is stuck at VCC File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 24
+    Warning (13410): Pin "hex2[0]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 25
+    Warning (13410): Pin "hex2[1]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 25
+    Warning (13410): Pin "hex2[2]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 25
+    Warning (13410): Pin "hex2[3]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 25
+    Warning (13410): Pin "hex2[4]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 25
+    Warning (13410): Pin "hex2[5]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 25
+    Warning (13410): Pin "hex2[6]" is stuck at VCC File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 25
+    Warning (13410): Pin "pronto" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 26
+    Warning (13410): Pin "db_trigger" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 29
+    Warning (13410): Pin "db_estado[0]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 31
+    Warning (13410): Pin "db_estado[1]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 31
+    Warning (13410): Pin "db_estado[2]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 31
+    Warning (13410): Pin "db_estado[3]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 31
+    Warning (13410): Pin "db_estado[4]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 31
+    Warning (13410): Pin "db_estado[5]" is stuck at GND File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 31
+    Warning (13410): Pin "db_estado[6]" is stuck at VCC File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 31
+Info (17049): 45 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 18
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v Line: 19
+Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 33 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Sun Sep 14 15:59:00 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:14
+
+

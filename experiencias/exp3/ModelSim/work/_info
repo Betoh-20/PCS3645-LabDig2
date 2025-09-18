@@ -1,0 +1,425 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp2/ModelSim
+vcontador_bcd_3digitos
+Z0 !s110 1757892897
+!i10b 1
+!s100 zW<M=cLMB`1^LR818CPz@1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGmEc[eE7O_AjBm>`cNa@53
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/ModelSim
+Z4 w1757875393
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos.v
+!i122 52
+L0 14 45
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1757892897.000000
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vcontador_bcd_3digitos_tb
+R0
+!i10b 1
+!s100 >G77f5g<Fh:7]=^gbPEK60
+R1
+I:28N1;ka6K<;[G0dm1ZPQ3
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos_tb.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos_tb.v
+!i122 53
+Z9 L0 15 44
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_bcd_3digitos_tb.v|
+!i113 1
+R7
+R8
+vcontador_cm
+R0
+!i10b 1
+!s100 mOG@LL6kNNz<]jNHz;f:k2
+R1
+IQzoBhLITY69BNgnMF>^@^0
+R2
+R3
+w1757880516
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v
+!i122 54
+L0 15 56
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm.v|
+!i113 1
+R7
+R8
+vcontador_cm_fd
+R0
+!i10b 1
+!s100 e6QQe[IOl803iVE>km?OR1
+R1
+II33Ng0@NQMSAY7LkU:jEl3
+R2
+R3
+w1757881063
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v
+!i122 55
+R9
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_fd.v|
+!i113 1
+R7
+R8
+vcontador_cm_tb
+R0
+!i10b 1
+!s100 G5YI<BZ95J0FQV[:TFcQS3
+R1
+ImmdYkFkS6LFO6_^doN??80
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_tb.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_tb.v
+!i122 56
+L0 17 93
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_tb.v|
+!i113 1
+R7
+R8
+vcontador_cm_uc
+Z10 !s110 1757892898
+!i10b 1
+!s100 Y_RHZUNGVNmX_Yi3jQI`Q3
+R1
+I>D[G>GCMjm64ZSMjKUOP01
+R2
+R3
+w1757881077
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc.v
+!i122 67
+L0 19 88
+R5
+r1
+!s85 0
+31
+Z11 !s108 1757892898.000000
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_cm_uc.v|
+!i113 1
+R7
+R8
+vcontador_m
+R0
+!i10b 1
+!s100 UMcO@8h3ZmBO;NMlhg]fW2
+R1
+I3:gC:LmeZ2iz?zVoc1kJ`3
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m.v
+!i122 57
+L0 16 38
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m.v|
+!i113 1
+R7
+R8
+vcontador_m_tb
+R0
+!i10b 1
+!s100 L945fNLA2[=Z^Wf8n;?X^2
+R1
+I9Lng[QC@:Cf?KQb;E7_V12
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m_tb.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m_tb.v
+!i122 58
+L0 18 89
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/contador_m_tb.v|
+!i113 1
+R7
+R8
+vedge_detector
+R10
+!i10b 1
+!s100 AEDYJD37[Ybb^@2QMVV>20
+R1
+IQciZFD[P]?@bPXGb7dH0j1
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/edge_detector.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/edge_detector.v
+!i122 59
+L0 19 23
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/edge_detector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/edge_detector.v|
+!i113 1
+R7
+R8
+vexp3_sensor
+R10
+!i10b 1
+!s100 MDz<65@WPU@HX6IBjN>W51
+R1
+IMd?m^:oe^Rol=hY0GUECQ2
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v
+!i122 60
+L0 17 69
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/exp3_sensor.v|
+!i113 1
+R7
+R8
+vgerador_pulso
+R10
+!i10b 1
+!s100 8AoYG=9jUP9YV[a7R[WFO1
+R1
+Ig@4=G6R`9:RnGHh?bMVfz1
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso.v
+!i122 61
+L0 14 69
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso.v|
+!i113 1
+R7
+R8
+vgerador_pulso_tb
+R10
+!i10b 1
+!s100 YT;932PM=N2=CEN`XF3e11
+R1
+IK?[U4<a8[A@Ra^Y`K3Xi:3
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso_tb.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso_tb.v
+!i122 62
+L0 15 61
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/gerador_pulso_tb.v|
+!i113 1
+R7
+R8
+vhexa7seg
+R10
+!i10b 1
+!s100 :20kA`7`L0gDF2=JFj`=l2
+R1
+I@m:e^K<OJ]hbTG6Q6j`kn0
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/hexa7seg.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/hexa7seg.v
+!i122 63
+L0 22 38
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/hexa7seg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/hexa7seg.v|
+!i113 1
+R7
+R8
+vinterface_hcsr04
+R10
+!i10b 1
+!s100 L=9NH]4c9Z@cID^5SMLeT0
+R1
+IRoCi?zWN;P;O9ZVR2diAM0
+R2
+R3
+w1757890104
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v
+!i122 64
+L0 13 49
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04.v|
+!i113 1
+R7
+R8
+vinterface_hcsr04_fd
+R10
+!i10b 1
+!s100 LFjJR_HiN4_G:@SX6eKgd1
+R1
+ILSlcegNf:nQViK>Sai6Ve1
+R2
+R3
+w1757890107
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd.v
+!i122 68
+L0 17 54
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_fd.v|
+!i113 1
+R7
+R8
+vinterface_hcsr04_tb
+R10
+!i10b 1
+!s100 <:T``gCVKAMBf1bl4;STA3
+R1
+I_cfIO?3eBcV?X^??D>IoZ1
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_tb.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_tb.v
+!i122 65
+L0 18 96
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_tb.v|
+!i113 1
+R7
+R8
+vinterface_hcsr04_uc
+R10
+!i10b 1
+!s100 hgFWeJ1;B8W`hS105YS4A1
+R1
+I4UEf1Baa^4I4EE_I5=azK3
+R2
+R3
+w1757892880
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc.v
+!i122 69
+L0 17 115
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_uc.v|
+!i113 1
+R7
+R8
+vregistrador_n
+R10
+!i10b 1
+!s100 c33QzNOWDW9lh[K4:od@l2
+R1
+I6UO3iK1@blYTW?nhe=SHj0
+R2
+R3
+R4
+8C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/registrador_n.v
+FC:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/registrador_n.v
+!i122 66
+L0 17 20
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/registrador_n.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/registrador_n.v|
+!i113 1
+R7
+R8

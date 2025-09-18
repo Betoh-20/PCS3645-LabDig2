@@ -1,0 +1,39 @@
+vsim -gui work.interface_hcsr04_tb
+# vsim -gui work.interface_hcsr04_tb 
+# Start time: 22:23:38 on Sep 14,2025
+# Loading work.interface_hcsr04_tb
+# Loading work.interface_hcsr04
+# Loading work.interface_hcsr04_uc
+# Loading work.interface_hcsr04_fd
+# Loading work.gerador_pulso
+# Loading work.contador_cm
+# Loading work.contador_cm_fd
+# Loading work.contador_m
+# Loading work.contador_bcd_3digitos
+# Loading work.contador_cm_uc
+# Loading work.registrador_n
+add wave -position insertpoint  \
+sim:/interface_hcsr04_tb/dut/clock \
+sim:/interface_hcsr04_tb/dut/reset \
+sim:/interface_hcsr04_tb/dut/medir \
+sim:/interface_hcsr04_tb/dut/echo \
+sim:/interface_hcsr04_tb/dut/trigger \
+sim:/interface_hcsr04_tb/dut/medida \
+sim:/interface_hcsr04_tb/dut/pronto \
+sim:/interface_hcsr04_tb/dut/db_estado
+run -all
+# Inicio das simulacoes
+# Caso de teste 1: 5882us
+# Fim do caso 1
+# Caso de teste 2: 5899us
+# Fim do caso 2
+# Caso de teste 3: 4353us
+# Fim do caso 3
+# Caso de teste 4: 4399us
+# Fim do caso 4
+# Fim das simulacoes
+# ** Note: $stop    : C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_tb.v(110)
+#    Time: 22635670 ns  Iteration: 0  Instance: /interface_hcsr04_tb
+# Break in Module interface_hcsr04_tb at C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Verilog/interface_hcsr04_tb.v line 110
+# End time: 23:00:16 on Sep 14,2025, Elapsed time: 0:36:38
+# Errors: 0, Warnings: 1
