@@ -1,0 +1,2 @@
+Created on:domingo, setembro 14, 2025
+Based on:exp3_sensor

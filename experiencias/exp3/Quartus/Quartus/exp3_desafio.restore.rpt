@@ -1,0 +1,100 @@
+Restore Archived Project report for exp3_desafio
+Tue Sep 16 20:18:57 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Tue Sep 16 20:18:57 2025 ;
+; Revision Name                   ; exp3_desafio                          ;
+; Top-level Entity Name           ; exp3_sensor                           ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/betoj/Downloads/exp3_desafio_t2bB6.qar' into the 'C:\\Users\\betoj\\Poli\\6-2-QuadriAula\\PCS3645-LabDig2\\experiencias\\exp3\\Quartus/' directory
+Info: Generated report 'exp3_desafio.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4830 megabytes
+    Info: Processing ended: Tue Sep 16 20:18:57 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------+
+; Files Restored                     ;
++------------------------------------+
+; File Name                          ;
++------------------------------------+
+; qar_info.json                      ;
+; Quartus/assignment_defaults.qdf    ;
+; Quartus/exp3_desafio.qsf           ;
+; Quartus/exp3_sensor.qsf            ;
+; Quartus/exp3_sensor_completo.qsf   ;
+; Quartus/exp3_t2bB6.qpf             ;
+; Verilog/circuito_pwm.v             ;
+; Verilog/contador_bcd_3digitos.v    ;
+; Verilog/contador_bcd_3digitos_tb.v ;
+; Verilog/contador_cm.v              ;
+; Verilog/contador_cm_fd.v           ;
+; Verilog/contador_cm_tb.v           ;
+; Verilog/contador_cm_uc.v           ;
+; Verilog/contador_m.v               ;
+; Verilog/contador_m_tb.v            ;
+; Verilog/controle_servo.v           ;
+; Verilog/edge_detector.v            ;
+; Verilog/exp3_sensor.v              ;
+; Verilog/gerador_pulso.v            ;
+; Verilog/gerador_pulso_tb.v         ;
+; Verilog/hexa7seg.v                 ;
+; Verilog/interface_hcsr04.v         ;
+; Verilog/interface_hcsr04_fd.v      ;
+; Verilog/interface_hcsr04_tb.v      ;
+; Verilog/interface_hcsr04_uc.v      ;
+; Verilog/registrador_n.v            ;
++------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

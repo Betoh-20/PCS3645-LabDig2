@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at interface_hcsr04_uc.v(52): always construct contains both blocking and non-blocking assignments File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Quartus/Verilog/interface_hcsr04_uc.v Line: 52
+Warning (10268): Verilog HDL information at interface_hcsr04_uc.v(69): always construct contains both blocking and non-blocking assignments File: C:/Users/betoj/Poli/6-2-QuadriAula/PCS3645-LabDig2/experiencias/exp3/Quartus/Verilog/interface_hcsr04_uc.v Line: 69

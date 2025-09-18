@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "db_medir",
+					"strict" : false
+				},
+				{
+					"name" : "db_echo",
+					"strict" : false
+				},
+				{
+					"name" : "medir",
+					"strict" : false
+				},
+				{
+					"name" : "echo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
