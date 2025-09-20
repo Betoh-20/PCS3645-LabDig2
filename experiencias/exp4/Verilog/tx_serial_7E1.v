@@ -30,7 +30,7 @@ module tx_serial_7E1 (
     output       db_tick         ,
     output       db_partida      ,
     output       db_saida_serial ,
-    output [6:0] db_estado       
+    output [6:0] db_estado
 );
  
     wire       s_reset        ;
@@ -112,11 +112,5 @@ module tx_serial_7E1 (
     assign db_tick         = s_tick;
     assign db_partida      = s_partida;
     assign db_saida_serial = s_saida_serial;
-
-    // hexa0
-    hexa7seg HEX0 ( 
-        .hexa    ( s_estado  ), 
-        .display ( db_estado )
-    );
   
 endmodule
