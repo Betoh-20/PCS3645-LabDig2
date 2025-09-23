@@ -17,13 +17,8 @@ module exp4_trena_uc (
     input clock,
     input reset,
     input mensurar,
-    input echo,
-    output       trigger,
-    output       saida_serial,
-    output [6:0] medida0,
-    output [6:0] medida1,
-    output [6:0] medida2,
-    output       pronto,
+    input       pronto,
+    output reg   
     output [6:0] db_estado
 );
 
@@ -52,7 +47,7 @@ module exp4_trena_uc (
         case (Eatual)
             inicial: Eprox <= mensurar ? preparacao : inicial;
             preparacao: Eprox <= medir;
-            medir:      Eprox <= transmitir;
+            medir:      Eprox <= pronto ? transmitir : medir;
             transmitir: Eprox <= inicial;
             default: 
                 Eprox = inicial;
